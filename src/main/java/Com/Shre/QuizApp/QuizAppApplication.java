@@ -1,4 +1,4 @@
-package com.Shre.QuizApp;
+package com.shre.quizApp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
