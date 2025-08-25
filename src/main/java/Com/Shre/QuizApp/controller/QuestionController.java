@@ -1,5 +1,6 @@
 package com.shre.quizApp.controller;
 
+import com.shre.quizApp.model.Question;
 import com.shre.quizApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
