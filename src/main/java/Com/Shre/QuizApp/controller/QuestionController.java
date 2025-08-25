@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("question")
 public class QuestionController {
 
+    @Autowired
+    QuestionService questionService;
+
     @GetMapping("allQuestions")
     public String getAllQuestions() {
         return "Here are your questions";
