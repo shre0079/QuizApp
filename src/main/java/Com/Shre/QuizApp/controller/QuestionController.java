@@ -1,4 +1,4 @@
-package Com.Shre.QuizApp;
+package com.shre.quizApp.controller;
 
 import com.shre.quizApp.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +15,6 @@ public class QuestionController {
 
     @GetMapping("allQuestions")
     public String getAllQuestions() {
-        return "Here are your questions";
+        return questionService.getAllQuestions();
     }
 }
