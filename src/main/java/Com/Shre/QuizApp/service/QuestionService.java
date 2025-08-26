@@ -3,7 +3,7 @@ package com.shre.quizApp.service;
 import com.shre.quizApp.dao.QuestionDao;
 import com.shre.quizApp.model.Question;
 import com.shre.quizApp.model.QuestionWrapper;
-import org.apache.catalina.connector.Response;
+import com.shre.quizApp.model.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -68,7 +68,6 @@ public class QuestionService {
     }
 
     public ResponseEntity<Integer> getScore(List<Response> responses) {
-
 
         int right = 0;
 
