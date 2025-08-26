@@ -40,8 +40,8 @@ public class QuestionService {
         return new ResponseEntity<>("success",HttpStatus.CREATED);
     }
 
-    public ResponseEntity<List<Integer>> getQuestionsForQuiz(String categoryName, Integer numQuestions) {
-        List<Integer> questions = questionDao.findRandomQuestionsByCategory(categoryName, numQuestions);
+    public ResponseEntity<List<Question>> getQuestionsForQuiz(String categoryName, Integer numQuestions) {
+        List<Question> questions = questionDao.findRandomQuestionsByCategory(categoryName, numQuestions);
         return new ResponseEntity<>(questions, HttpStatus.OK);
     }
 
